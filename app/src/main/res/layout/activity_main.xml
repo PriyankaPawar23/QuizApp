@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+
+        <ProgressBar
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="bottom"
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+            android:indeterminate="false">
+
+        </ProgressBar>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/QuestionNumber"
+        android:text="@string/question_number"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selctedoption"
+            android:visibility="gone"
+            android:id="@+id/selectoption"
+            android:textAlignment="center"
+            android:textColor="#ffffff">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CorrectAnswer"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:text="@string/correctanswer"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:id="@+id/question"
+            android:text="@string/question_1"
+            android:textSize="20dp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FirstTwoOption"
+        android:layout_gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/optionA"
+            android:text="@string/question1_A"
+            android:background="@color/teal_200"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:paddingTop="14dp"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/optionB"
+            android:text="@string/question1_B"
+            android:background="@color/teal_200"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:paddingTop="14dp"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RemainingTwoOption"
+        android:layout_gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/optionC"
+            android:text="@string/question1_C"
+            android:background="@color/teal_200"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:paddingTop="14dp"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/optionD"
+            android:text="@string/question1_D"
+            android:background="@color/teal_200"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:paddingTop="14dp"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/next"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/btn_round_black"
+    android:textColor="@color/white"
+    android:text="Next"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="110dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
